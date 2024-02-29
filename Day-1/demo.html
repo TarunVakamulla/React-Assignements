@@ -1,0 +1,48 @@
+<html>
+	<head>
+
+    <style>
+        h3{
+            color:brown;
+        }
+    </style>
+    </head> 
+	<body>
+	<h3> JavaScript Programming - Accessing DOM Objects </h3>
+	<hr/>	 
+		
+	Paragraph Content:  
+	<p id="p1"></p>	
+	 
+	User Name:<input type="text" id="t1" />
+
+    <img id="img1" height="250px"; width="250px">
+        
+    <hr>
+    Technology Name: <input type="text" id="t2" />
+    <input type="button" onclick="buttonClick()" value="Get Message" />
+    <p id="p2"></p>
+	<script>	
+    
+    function buttonClick()
+    {
+        var inputObj=document.getElementById("t2");
+        var paraObj=document.getElementById("p2");
+        paraObj.innerText="Welcome to "+inputObj.value;
+    }
+
+	 var paraObj=document.getElementById("p1");
+     paraObj.innerText="Welcome to Java Script";
+
+     var paraObj=document.getElementById("t1");
+     paraObj.value="Tarun";
+
+     var imgObj=document.getElementById("img1");
+     imgObj.src="https://static.pexels.com/photos/9611/flowers.jpg";
+
+
+	</script>		  
+	</body>	
+</html>
+ 
+

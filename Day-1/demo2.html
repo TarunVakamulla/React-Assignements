@@ -1,0 +1,29 @@
+<html>
+<head>
+    <style>
+        h3{
+            color: red;
+        }
+    </style>
+</head> 
+<body>
+<h3> JavaScript Programming - Accessing DOM Objects </h3>
+<hr/>	 
+		
+Product Name: <input type="text" id="t1"><br><br>
+Unit Name: <input type="text" id="u1"><br><br>
+Quantity: <input type="text" id="q1"><br><br>
+Total Amount:  
+<p  id="p1"> </p>
+<input type="button" onclick="sum()" value="Get Total" /><br>
+<script>
+    function sum(){
+    var obj1=document.getElementById("p1");
+    var obj2=document.getElementById("u1");
+    var obj3=document.getElementById("q1");
+    var obj4=obj2.value*obj3.value;
+    obj1.innerHTML=obj4;
+    }
+</script>		  
+</body>	
+</html>
